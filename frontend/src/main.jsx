@@ -2,7 +2,10 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
-const API = 'http://localhost:8080';
+const API =
+  window.location.hostname === 'localhost'
+    ? 'http://localhost:8080'
+    : '';
 
 const loadUser = () =>
     JSON.parse(localStorage.getItem('jobsphereUser') || 'null');
