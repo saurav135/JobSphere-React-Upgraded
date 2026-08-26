@@ -1,51 +1,89 @@
 # JobSphere
 
-Production-style full-stack recruitment management system built with Java, Spring Boot, Spring Security, JWT, MySQL and React.
+A production-style full-stack recruitment management system built with Java, Spring Boot, Spring Security, JWT, MySQL, and React.
 
-## Technology
+JobSphere provides separate workflows for candidates, recruiters, and administrators, including job discovery, job applications, recruiter hiring management, authentication, and dashboards.
+
+## 🚀 Technology Stack
+
 - Java 17
 - Spring Boot
-- Spring Security + JWT + BCrypt
+- Spring Security
+- JWT Authentication
+- BCrypt Password Encryption
 - Spring Data JPA / Hibernate
 - MySQL
 - REST API
-- React + Vite
+- React
+- Vite
 - Responsive CSS
 
-## Main Features
-- Candidate and recruiter registration/login
+## ✨ Main Features
+
+### 👤 Candidate
+
+- Candidate registration and login
 - Secure BCrypt password storage
-- JWT authentication and role-based authorization
-- Responsive React job search experience
-- Recruiter job create/update/close
-- Candidate job applications
+- JWT-based authentication
+- Browse and search jobs
+- Apply for jobs
 - Duplicate application prevention
-- Application status workflow
-- Candidate application history
-- Recruiter application management
-- Recruiter dashboard and hiring pipeline
-- Admin statistics dashboard
+- Track application status
+- View application history
+- Manage candidate profile
+- Resume management
 
-## Run the Spring Boot application
-1. Open this `JobSphere` folder in IntelliJ IDEA.
-2. Open `src/main/resources/application.properties`.
-3. Replace `CHANGE_ME` with your local MySQL root password.
-4. Run `JobSphereApplication.java`.
-5. Open `http://localhost:8080`.
+### 🏢 Recruiter
 
-## React frontend development
-The React source is in `frontend/`. To run it separately during development:
+- Recruiter registration and login
+- Secure authentication
+- Create jobs
+- Update jobs
+- Close jobs
+- Manage candidate applications
+- Hiring pipeline management
+- Recruiter dashboard
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+### 🛡️ Admin
 
-For the integrated Spring Boot app, build React and copy the generated `frontend/dist/` contents into `src/main/resources/static/`. The repository currently includes the React source so the frontend can be developed and rebuilt cleanly.
+- Admin authentication
+- Role-based authorization
+- Application management
+- Administrative statistics dashboard
 
-## Default admin
-Email: `admin@jobsphere.com`
-Password: `Admin@123`
+## 🔐 Security
 
-Change the default admin password before real deployment.
+- Spring Security
+- JWT-based authentication
+- Role-based authorization
+- BCrypt password hashing
+- Protected REST endpoints
+- Secure authentication workflow
+
+## 📁 Project Structure
+
+```text
+JobSphere/
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│   └── package-lock.json
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/jobSphere/
+│       │       ├── config/
+│       │       ├── controller/
+│       │       ├── dto/
+│       │       ├── entity/
+│       │       ├── repository/
+│       │       └── service/
+│       │
+│       └── resources/
+│           ├── static/
+│           └── application.properties
+│
+├── pom.xml
+├── README.md
+└── .gitignore
