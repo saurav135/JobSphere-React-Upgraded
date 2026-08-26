@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172337}
+header{height:70px;background:#14213d;color:white;padding:0 7%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5}
+.logo{font-size:27px;font-weight:800}.logo span{color:#ffd43b}
+nav{display:flex;gap:18px;align-items:center}nav a{color:white;text-decoration:none}
+button{cursor:pointer;border:0;border-radius:7px;padding:10px 15px}
+nav button{background:#ffffff15;color:white;border:1px solid #ffffff44}
+.hero{padding:90px 7%;min-height:430px;background:linear-gradient(135deg,#eaf1ff,#fff)}
+.eyebrow{color:#2867df;font-weight:bold}.hero h1{font-size:54px;line-height:1.05;margin:15px 0}
+.hero p{font-size:18px;color:#64748b}.hero a{display:inline-block;margin-top:15px;padding:13px 22px;background:#2867df;color:white;text-decoration:none;border-radius:7px;font-weight:bold}
+section:not(.hero){max-width:1120px;margin:55px auto;padding:0 20px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}
+.section-head input{width:300px;padding:13px;border:1px solid #cbd5e1;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card,.panel{background:white;padding:22px;border-radius:13px;box-shadow:0 7px 25px #17233712}
+.card h3{margin:0 0 7px}.company{color:#2867df;font-weight:bold}
+.tag{display:inline-block;background:#eef4ff;padding:5px 8px;border-radius:15px;font-size:12px;margin:10px 4px 10px 0}
+.card button{background:#2867df;color:white;font-weight:bold}
+.application{padding:14px 0;border-top:1px solid #ddd;display:flex;justify-content:space-between}.status{color:#09854a;font-weight:bold}
+.hidden{display:none!important}
+.modal{position:fixed;inset:0;background:#0008;display:flex;align-items:center;justify-content:center;z-index:10}
+.modal-box{background:white;width:min(450px,92%);padding:28px;border-radius:14px;position:relative}.close{position:absolute;right:12px;top:10px;background:transparent;font-size:22px}
+.form{display:grid;gap:11px}.form input,.form select,.form textarea{padding:12px;border:1px solid #cbd5e1;border-radius:7px}.form button{background:#2867df;color:white;font-weight:bold}
+.switch{text-align:center;color:#2867df;margin-top:12px;cursor:pointer}
+@media(max-width:750px){.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:42px}}
+@media(max-width:550px){.grid{grid-template-columns:1fr}.section-head{display:block}.section-head input{width:100%;margin-top:10px}}
