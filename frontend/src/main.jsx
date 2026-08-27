@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const API =
-  window.location.hostname === 'localhost'
-    ? 'http://localhost:8080'
-    : '';
+    window.location.hostname === 'localhost'
+        ? 'http://localhost:10000'
+        : '';
 
 const loadUser = () =>
     JSON.parse(localStorage.getItem('jobsphereUser') || 'null');
