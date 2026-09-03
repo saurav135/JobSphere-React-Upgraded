@@ -19,7 +19,10 @@ public class Interview {
 
     private String meetingLink;
 
+    @Lob
     private String notes;
+
+   
 
     public Interview() {
     }
